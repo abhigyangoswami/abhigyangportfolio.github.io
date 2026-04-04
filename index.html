@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhigyan | Programmer & Chess Champion</title>
+    <meta name="description"
+        content="Portfolio of Abhigyan - Student, Programmer, and U-17 State Chess Champion from Assam. Explore achievements and coding projects.">
+    <!-- Load custom modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="sticky-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#about" class="nav-link" data-section="about">About</a>
+            <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
+            <a href="#robotics" class="nav-link" data-section="robotics">Robotics</a>
+            <a href="#coding-lab" class="nav-link" data-section="coding-lab" style="text-align: center;">Code Lab</a>
+        </div>
+    </nav>
+
+    <!-- Section 1: The Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Hi, I'm Abhigyan</h1>
+            <p>Student, Programmer, and U-17 State Chess Champion</p>
+            <a href="https://www.linkedin.com/in/abhigyan-g-67179a3a9/" class="cta-button" target="_blank"
+                rel="noopener noreferrer">
+                Connect on LinkedIn
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Floating STEM + Strategy Background Elements -->
+        <div class="hero-floaters" aria-hidden="true">
+
+            <!-- ♔ Chess King · Strategist / FIDE Master -->
+            <span class="floater floater--king">♔</span>
+
+            <!-- Microchip · Hardware / Robotics -->
+            <span class="floater floater--chip">
+                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <rect x="22" y="22" width="56" height="56" rx="5"/>
+                    <rect x="34" y="34" width="32" height="32" rx="3"/>
+                    <line x1="50" y1="34" x2="50" y2="66"/>
+                    <line x1="34" y1="50" x2="66" y2="50"/>
+                    <line x1="37" y1="22" x2="37" y2="10"/><line x1="50" y1="22" x2="50" y2="10"/><line x1="63" y1="22" x2="63" y2="10"/>
+                    <line x1="37" y1="78" x2="37" y2="90"/><line x1="50" y1="78" x2="50" y2="90"/><line x1="63" y1="78" x2="63" y2="90"/>
+                    <line x1="22" y1="37" x2="10" y2="37"/><line x1="22" y1="50" x2="10" y2="50"/><line x1="22" y1="63" x2="10" y2="63"/>
+                    <line x1="78" y1="37" x2="90" y2="37"/><line x1="78" y1="50" x2="90" y2="50"/><line x1="78" y1="63" x2="90" y2="63"/>
+                </svg>
+            </span>
+
+            <!-- </> Code Symbol · Python / Programming -->
+            <span class="floater floater--code">&lt;/&gt;</span>
+
+            <!-- Space Shuttle · Aerospace / Mechanics -->
+            <span class="floater floater--rocket">
+                <svg viewBox="0 0 70 92" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M35 4 C24 16 18 34 18 50 L52 50 C52 34 46 16 35 4Z"/>
+                    <circle cx="35" cy="30" r="7"/>
+                    <path d="M18 48 L6 65 L18 60"/>
+                    <path d="M52 48 L64 65 L52 60"/>
+                    <path d="M24 50 L24 62 Q35 66 46 62 L46 50"/>
+                    <path d="M29 63 C28 74 35 80 35 80 C35 80 42 74 41 63" stroke-dasharray="3 3"/>
+                </svg>
+            </span>
+
+            <!-- Euler's Identity · Mathematics -->
+            <span class="floater floater--euler">e<sup>iπ</sup> + 1 = 0</span>
+
+            <!-- Saturn-like Planet · Aerospace / Space -->
+            <span class="floater floater--planet">
+                <svg viewBox="0 0 160 110" fill="none" stroke="currentColor" stroke-linecap="round">
+                    <defs>
+                        <!-- Mask cuts out the planet circle so the back ring arc disappears behind it -->
+                        <mask id="h-pm">
+                            <rect width="160" height="110" fill="white"/>
+                            <circle cx="80" cy="55" r="32" fill="black"/>
+                        </mask>
+                    </defs>
+                    <!-- Ring back arc (goes behind planet, dashed & dimmer) -->
+                    <path d="M 6,55 A 74,20 0 0 0 154,55" stroke-width="1.8" opacity="0.45"
+                          stroke-dasharray="5 3" mask="url(#h-pm)"/>
+                    <!-- Planet body -->
+                    <circle cx="80" cy="55" r="32" stroke-width="2.5"/>
+                    <!-- Surface bands for depth -->
+                    <path d="M 52,47 Q 80,43 108,47" stroke-width="1" opacity="0.6"/>
+                    <path d="M 50,63 Q 80,67 110,63" stroke-width="1" opacity="0.6"/>
+                    <!-- Ring front arc (in front of planet) -->
+                    <path d="M 6,55 A 74,20 0 0 1 154,55" stroke-width="2.5"/>
+                </svg>
+            </span>
+
+        </div>
+
+        <!-- Scroll Indicator Chevron -->
+
+        <a id="scroll-chevron" href="#about" aria-label="Scroll to About section">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Section 2: About Me -->
+    <section id="about" class="reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate student driven by a profound love for logical problem-solving, which I express
+                        both on the chessboard and through code. As a competitive chess player and programmer, I thrive
+                        on analyzing complex situations, calculating precise outcomes, and executing winning strategies.
+                    </p>
+                    <p>Whether I'm developing software solutions or preparing for my next chess tournament, I am
+                        constantly learning and pushing the boundaries of my capabilities. I believe that the discipline
+                        and analytical thinking cultivated in chess seamlessly translate into writing efficient and
+                        elegant code.</p>
+                    <p>My curiosity also reaches beyond the terrestrial, into the vast mechanics of the cosmos. I am
+                        deeply fascinated by astronomy and the engineering required for space exploration—viewing the
+                        universe as the ultimate complex system, governed by the same mathematical beauty and logical
+                        precision I find in every line of code.</p>
+                </div>
+                <!-- Profile Image -->
+                <div class="profile-image-container">
+                    <img src="images/My-pic.webp" alt="Abhigyan's Profile Picture"
+                        style="width: 100%; height: auto; display: block; border-radius: inherit;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2.5: Strategic Thinking -->
+    <section id="strategy" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Strategic Thinking: From Board to Code</h2>
+            <p
+                style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-top: -2.5rem; margin-bottom: 4rem;">
+                I don't just write code; I calculate moves and optimize for the endgame.
+            </p>
+            <div
+                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; max-width: 1050px; margin: 0 auto;">
+                <!-- Block 1 -->
+                <div class="glass-card"
+                    style="flex: 1 1 360px; max-width: 480px; padding: 4rem 3.5rem; align-items: flex-start; text-align: left; border-radius: 24px; border: 1px solid var(--glass-border); height: 100%;">
+                    <div class="achievement-icon"
+                        style="font-family: Arial, sans-serif; font-size: 3.5rem; margin-bottom: 2rem;">♞</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.25rem; color: white;">Pattern Recognition & Foresight
+                    </h3>
+                    <p style="color: var(--text-muted); margin-bottom: 0; font-size: 1.05rem; line-height: 1.8;">In
+                        chess, anticipating the opponent's
+                        strategy is key. I bring this same foresight into software architecture, mapping out edge cases
+                        and planning scalable patterns from the first line of code.</p>
+                </div>
+                <!-- Block 2 -->
+                <div class="glass-card"
+                    style="flex: 1 1 360px; max-width: 480px; padding: 4rem 3.5rem; align-items: flex-start; text-align: left; border-radius: 24px; border: 1px solid var(--glass-border); height: 100%;">
+                    <div class="achievement-icon"
+                        style="font-family: monospace; font-size: 3.5rem; font-weight: bold; letter-spacing: -0.1em; color: #60a5fa; filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.4)); margin-bottom: 2rem;">
+                        &lt;/&gt;</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.25rem; color: white;">Algorithmic Logic & Debugging
+                    </h3>
+                    <p style="color: var(--text-muted); margin-bottom: 0; font-size: 1.05rem; line-height: 1.8;">Just as
+                        a bad move can cost a game, an
+                        unoptimized algorithm can break an app. I thrive on breaking down complex problems logically and
+                        methodically debugging until the system runs flawlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: The Trophy Room -->
+    <section id="achievements" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Achievements & Honours</h2>
+            <div class="trophy-grid">
+                <!-- Box 1 -->
+                <div class="glass-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>U-17 Assam State <br>Chess Champion</h3>
+                    <p>Secured the first place in the state-level under-17 championship, demonstrating strategic mastery
+                        and resilience under pressure.</p>
+                    <div class="award-photo" style="padding: 0; border: none; overflow: hidden;">
+                        <img src="images/U17-receive.webp" alt="U-17 State Champion Award"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <button class="view-cert-btn"
+                        onclick="openModal('images/U17-cert.webp', 'U-17 Assam State Chess Champion')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                        </svg>
+                        View Award
+                    </button>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="glass-card">
+                    <div class="achievement-icon">🧠</div>
+                    <h3>Top 10% India <br>IOQM</h3>
+                    <p>
+                        Ranked in the top decile nationally in the prestigious Indian Olympiad Qualifier in Mathematics.
+                    </p>
+                    <div class="award-photo" style="padding: 0; border: none; overflow: hidden;">
+                        <img src="images/IOQM-Certificate.webp" alt="IOQM Certificate"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <button class="view-cert-btn" onclick="openModal('images/IOQM-Certificate.webp', 'Top 10% India IOQM')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                        </svg>
+                        View Certificate
+                    </button>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="glass-card">
+                    <div class="achievement-icon">📜</div>
+                    <h3>AACA Special <br>Felicitation</h3>
+                    <p>
+                        Formally felicitated by the All Assam Chess Association for outstanding performance and
+                        representation of the state in national-level championships.
+                    </p>
+                    <div class="award-photo" style="padding: 0; border: none; overflow: hidden;">
+                        <img src="images/AACA-receive.webp" alt="AACA Felicitation Award"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <button class="view-cert-btn" onclick="openModal('images/AACA_cert.webp', 'AACA Special Felicitation')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                        </svg>
+                        View Certificate
+                    </button>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="glass-card">
+                    <div class="achievement-icon">🏅</div>
+                    <h3>4th - All India <br>Schools Chess</h3>
+                    <p>
+                        Secured a top-5 national ranking at the All India Open FIDE Rating School Chess Tournament,
+                        competing against elite players from across the country.
+                    </p>
+                    <div class="award-photo">
+                        <img src="images/school_receive.webp" alt="4th - All India Schools Chess"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <button class="view-cert-btn"
+                        onclick="openModal('images/school_award.webp', '4th - All India Schools Chess')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                        </svg>
+                        View Award
+                    </button>
+                </div>
+
+                <!-- Box 5 -->
+                <div class="glass-card">
+                    <div class="achievement-icon">👑</div>
+                    <h3>Arena FIDE <br>Master Title</h3>
+                    <p>Awarded the official AFM title by the International Chess Federation (FIDE) for consistent
+                        exceptional performance.</p>
+                    <div class="award-photo" style="padding: 0; border: none; overflow: hidden;">
+                        <img src="images/Title-Cert.webp" alt="Arena FIDE Master Title Proof"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <button class="view-cert-btn"
+                        onclick="openModal(['images/AFM-cert.webp', 'images/ACM-cert.webp'], 'Arena FIDE Master Title')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                        </svg>
+                        View Certificate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3.5: The Learning Roadmap -->
+    <section id="roadmap" class="reveal" style="padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 3rem;">The Learning Roadmap</h2>
+            <div
+                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+                <span class="project-badge"
+                    style="font-size: 1rem; margin-bottom: 0; padding: 0.85rem 1.75rem; border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.05); text-transform:none;">
+                    <strong>Python Mastery:</strong> <span
+                        style="color: var(--text-muted); font-weight: 400; margin-left: 0.4rem; letter-spacing: normal;">(Angela
+                        Yu's 100 Days of Code)</span>
+                </span>
+                <span class="project-badge"
+                    style="font-size: 1rem; margin-bottom: 0; padding: 0.85rem 1.75rem; border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.05); text-transform:none;">
+                    <strong>WebDev Mastery:</strong> <span
+                        style="color: var(--text-muted); font-weight: 400; margin-left: 0.4rem; letter-spacing: normal;">Responsive Web Design Certification by freeCodeCamp.org</span>
+                </span>
+                <span class="project-badge"
+                    style="font-size: 1rem; margin-bottom: 0; padding: 0.85rem 1.75rem; border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.05); text-transform:none;">
+                    <strong>C++ & Data Structures:</strong> <span
+                        style="color: var(--text-muted); font-weight: 400; margin-left: 0.4rem; letter-spacing: normal;">(Class
+                        11 C++ by Sumita Arora)</span>
+                </span>
+                <span class="project-badge"
+                    style="font-size: 1rem; margin-bottom: 0; padding: 0.85rem 1.75rem; border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.05); text-transform:none;">
+                    <strong>Basics of Arduino:</strong> <span
+                        style="color: var(--text-muted); font-weight: 400; margin-left: 0.4rem; letter-spacing: normal;">(Tinkercad)</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3.75: Exploring New Frontiers -->
+    <section id="robotics" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Exploring New Frontiers</h2>
+            <div class="project-card"
+                style="max-width: 900px; margin: 0 auto; padding: 3rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);">
+                <div style="display: flex; flex-direction: column;">
+                    <span class="project-badge"
+                        style="background: rgba(139, 92, 246, 0.1); color: var(--accent-secondary); border-color: rgba(139, 92, 246, 0.2); margin-bottom: 2rem;">
+                        Learning Log
+                    </span>
+                    <h3 style="font-size: 2.2rem; margin-bottom: 2.5rem; color: white;">Embedded Systems &amp; Robotics
+                    </h3>
+
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <span style="font-size: 1.8rem; line-height: 1;">⚡</span>
+                        <div>
+                            <strong
+                                style="color: white; font-size: 1.15rem; display: block; margin-bottom: 0.25rem;">Status</strong>
+                            <span style="color: var(--text-muted); font-size: 1.05rem;">Currently mastering the basics
+                                of circuit logic using Tinkercad.</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <span style="font-size: 1.8rem; line-height: 1;">🎯</span>
+                        <div>
+                            <strong
+                                style="color: white; font-size: 1.15rem; display: block; margin-bottom: 0.25rem;">Goal</strong>
+                            <span style="color: var(--text-muted); font-size: 1.05rem;">To bridge the gap between my
+                                Python coding skills and physical hardware.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Arduino Projects Sub-section -->
+            <div style="max-width: 900px; margin: 3rem auto 0;">
+                <h3 class="arduino-subheading">My Arduino Projects</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+
+                    <!-- Card 1: LED Blinker -->
+                    <div class="arduino-card">
+                        <div class="arduino-card-header">
+                            <span class="arduino-icon">💡</span>
+                            <div>
+                                <h4 class="arduino-card-title">LED Blinker</h4>
+                                <span class="arduino-card-subtitle">My First Project</span>
+                            </div>
+                        </div>
+                        <p class="arduino-card-desc">Simulating a basic LED 'Blink' circuit to understand pulse-width
+                            modulation (PWM).</p>
+                        <ul class="arduino-card-list">
+                            <li><span class="arduino-list-label">Goal:</span> Master PWM by syncing Red, Green, and
+                                Yellow LEDs.</li>
+                            <li><span class="arduino-list-label">Learn:</span> Use <code>analogWrite()</code> to
+                                simulate variable voltage levels.</li>
+                            <li><span class="arduino-list-label">Logic:</span> Modulate duty cycles (0–255) to control
+                                brightness.</li>
+                        </ul>
+                        <a href="https://www.tinkercad.com/things/ctYZPS5Ubpj-my-first-arduino-project?sharecode=xMvcFwSVb1MdC9MPDVkbjjZ2cyHc7ogrVWq8ZisPYRM"
+                            target="_blank" rel="noopener noreferrer" class="tinkercad-btn tinkercad-btn--dark"
+                            style="align-self: center; margin-top: auto;">
+                            <img src="Tinkercad_logo.ico" alt="Tinkercad" width="22" height="22"
+                                style="flex-shrink:0; border-radius: 4px; display: block;">
+                            Check Simulation
+                        </a>
+                    </div>
+
+                    <!-- Card 2: Automatic Night Light -->
+                    <div class="arduino-card arduino-card--wip">
+                        <div class="arduino-card-header">
+                            <span class="arduino-icon">🔧</span>
+                            <div>
+                                <h4 class="arduino-card-title">Automatic Night Light</h4>
+                                <span class="arduino-card-subtitle arduino-card-subtitle--wip">Current Project</span>
+                            </div>
+                        </div>
+                        <p class="arduino-card-desc">
+                            <strong style="color: rgba(255,255,255,0.85); font-weight: 600;">LDR Sensor — </strong>
+                            A follow-up to PWM. Instead of the user telling the LED how bright to be, a sensor does it
+                            for them.
+                        </p>
+                        <ul class="arduino-card-list">
+                            <li><span class="arduino-list-label">Goal:</span> The LED turns on automatically when the
+                                user covers the sensor with their hand.</li>
+                            <li><span class="arduino-list-label">Learn:</span> How to use a Photoresistor (LDR) and the
+                                <code>analogRead()</code> command.
+                            </li>
+                            <li><span class="arduino-list-label">Logic:</span> Read a value (0–1023) from the sensor; if
+                                it drops below a darkness threshold, the Arduino triggers the LED.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Projects (My Coding Lab) -->
+    <section id="coding-lab" class="reveal">
+        <div class="container">
+            <h2 class="section-title">My Code Lab</h2>
+            <div class="python-grid">
+
+                <!-- Card 1: Secure Password Generator -->
+                <div class="python-card">
+                    <div class="python-card-header">
+                        <span class="python-icon">🔒</span>
+                        <div>
+                            <h4 class="python-card-title">Secure Password Generator</h4>
+                            <span class="python-card-badge">My First Project</span>
+                        </div>
+                    </div>
+                    <p class="python-card-desc">An essential application in today's world, designed to generate
+                        cryptographically secure passwords with customizable constraints.</p>
+                    <ul class="arduino-card-list" style="margin-bottom: 0.5rem;">
+                        <li><span class="arduino-list-label">Goal:</span> Protect user accounts by creating randomized,
+                            uncrackable passwords.</li>
+                        <li><span class="arduino-list-label">Learn:</span> Applied the <code>random</code> module for
+                            cryptographically strong randomization.</li>
+                        <li><span class="arduino-list-label">Logic:</span> Combine specialized character sets with
+                            user-defined length requirements via iterative loops.</li>
+                    </ul>
+                    <div class="tech-stack" style="margin-bottom: 0;">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Cryptography</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <a href="https://github.com/abhigyangoswami/Password-Generator" class="project-cta python-cta"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                        Check it out
+                    </a>
+                </div>
+
+                <!-- Card 2: Wordle for Chess -->
+                <div class="python-card">
+                    <div class="python-card-header">
+                        <span class="python-icon">♞</span>
+                        <div>
+                            <h4 class="python-card-title">Wordle for Chess</h4>
+                            <span class="python-card-badge python-card-badge--strategy">Strategy Game</span>
+                        </div>
+                    </div>
+                    <p class="python-card-desc">A strategic CLI game blending Wordle deduction with chess vocabulary and
+                        custom ASCII visuals. It blends Chess and Wordle together to give the user a unique game
+                        experience.</p>
+                    <ul class="arduino-card-list" style="margin-bottom: 0.5rem;">
+                        <li><span class="arduino-list-label">Goal:</span> Correctly identify a hidden 5-letter chess
+                            term within six attempts.</li>
+                        <li><span class="arduino-list-label">Learn:</span> Implementation of modular architecture and
+                            state machines to handle dynamic ASCII art.</li>
+                        <li><span class="arduino-list-label">Logic:</span> Provide 'Wordle-style' color feedback and
+                            trigger piece-removal art based on remaining lives.</li>
+                    </ul>
+                    <div class="tech-stack" style="margin-bottom: 0;">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">ASCII Art</span>
+                        <span class="tech-tag">Game Logic</span>
+                    </div>
+                    <a href="https://github.com/abhigyangoswami/Wordle-for-Chess" class="project-cta python-cta"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                        Check it out
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 5: Footer -->
+    <footer class="reveal">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/abhigyan-g-67179a3a9/" class="social-link" target="_main"
+                    rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/abhigyangoswami" class="social-link" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+                © 2026 Abhigyan
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top FAB -->
+    <button id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal(event, true)">&times;</span>
+            <h3 id="modalTitle">Certificate</h3>
+            <div class="modal-image-wrapper">
+                <img id="modalImage" src="" alt="Certificate Closeup">
+                <div id="modalPlaceholder"
+                    style="display: none; flex-direction: column; align-items: center; justify-content: center; padding: 4rem; text-align: center; color: var(--text-muted); border: 2px dashed var(--glass-border); border-radius: 12px; width: 100%; height: 100%;">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem; filter: grayscale(1);">📄</span>
+                    <span>Certificate scan will be uploaded soon.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
