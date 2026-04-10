@@ -191,3 +191,43 @@ function closeModal(event, force = false) {
         }, 300);
     }
 }
+
+// ── Security / Anti-Scraping Measures ──
+
+// Disable right-click context menu
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
+
+// Disable keyboard shortcuts for developer tools and view source
+document.addEventListener('keydown', event => {
+    // Prevent F12
+    if (event.key === 'F12') {
+        event.preventDefault();
+    }
+    // Prevent Ctrl+Shift+I / Cmd+Option+I (Inspect)
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === 'I' || event.key === 'i')) {
+        event.preventDefault();
+    }
+    // Prevent Ctrl+Shift+J / Cmd+Option+J (Console)
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === 'J' || event.key === 'j')) {
+        event.preventDefault();
+    }
+    // Prevent Ctrl+Shift+C / Cmd+Option+C (Element Selection)
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === 'C' || event.key === 'c')) {
+        event.preventDefault();
+    }
+    // Prevent Ctrl+U / Cmd+U (View Source)
+    if ((event.ctrlKey || event.metaKey) && (event.key === 'U' || event.key === 'u')) {
+        event.preventDefault();
+    }
+});
+
+// Disable text selection and copying
+document.addEventListener('selectstart', event => event.preventDefault());
+document.addEventListener('copy', event => {
+    event.preventDefault();
+    if (event.clipboardData) {
+        event.clipboardData.setData('text/plain', 'Content copying is disabled on this site.');
+    }
+});
