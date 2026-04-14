@@ -1,3 +1,55 @@
+/**
+ * script.js — Abhigyan's Portfolio
+ *
+ * Code & Logic: MIT License (c) 2026 Abhigyan
+ * Personal Content (photos, certificates, awards):
+ *   © 2026 Abhigyan. All Rights Reserved.
+ *   Do not reproduce personal content without written permission.
+ */
+
+// ── Premium Smooth Scroll Utility ──
+// Uses a custom easeInOutCubic curve via requestAnimationFrame
+// for a cinematic, polished scroll feel on all internal navigation.
+const NAV_OFFSET = 72; // px — height of sticky nav
+const SCROLL_DURATION = 700; // ms
+
+function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+function smoothScrollTo(targetY) {
+    const startY = window.scrollY;
+    const distance = targetY - startY;
+    if (Math.abs(distance) < 1) return;
+    let startTime = null;
+
+    function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / SCROLL_DURATION, 1);
+        window.scrollTo(0, startY + distance * easeInOutCubic(progress));
+        if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
+
+function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+    smoothScrollTo(top);
+}
+
+// ── Wire smooth scroll to all internal anchor links ──
+document.addEventListener('click', (e) => {
+    const anchor = e.target.closest('a[href^="#"]');
+    if (!anchor) return;
+    const id = anchor.getAttribute('href').slice(1);
+    if (!id) return;
+    e.preventDefault();
+    scrollToSection(id);
+});
+
 // Scroll reveal animation
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -52,7 +104,7 @@ function updateBackToTop() {
 }
 
 backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    smoothScrollTo(0);
 });
 
 window.addEventListener("scroll", () => {
@@ -192,42 +244,7 @@ function closeModal(event, force = false) {
     }
 }
 
-// ── Security / Anti-Scraping Measures ──
-
-// Disable right-click context menu
-document.addEventListener('contextmenu', event => {
-    event.preventDefault();
-});
-
-// Disable keyboard shortcuts for developer tools and view source
-document.addEventListener('keydown', event => {
-    // Prevent F12
-    if (event.key === 'F12') {
-        event.preventDefault();
-    }
-    // Prevent Ctrl+Shift+I / Cmd+Option+I (Inspect)
-    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === 'I' || event.key === 'i')) {
-        event.preventDefault();
-    }
-    // Prevent Ctrl+Shift+J / Cmd+Option+J (Console)
-    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === 'J' || event.key === 'j')) {
-        event.preventDefault();
-    }
-    // Prevent Ctrl+Shift+C / Cmd+Option+C (Element Selection)
-    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === 'C' || event.key === 'c')) {
-        event.preventDefault();
-    }
-    // Prevent Ctrl+U / Cmd+U (View Source)
-    if ((event.ctrlKey || event.metaKey) && (event.key === 'U' || event.key === 'u')) {
-        event.preventDefault();
-    }
-});
-
-// Disable text selection and copying
-document.addEventListener('selectstart', event => event.preventDefault());
-document.addEventListener('copy', event => {
-    event.preventDefault();
-    if (event.clipboardData) {
-        event.clipboardData.setData('text/plain', 'Content copying is disabled on this site.');
-    }
-});
+// ── Copyright Notice ──
+// Code structure & logic: MIT License — free to learn from and adapt.
+// Personal content (photos, certificates, awards) © 2026 Abhigyan.
+// All personal content rights reserved. Do not reproduce without permission.
