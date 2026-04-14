@@ -21,6 +21,12 @@ This repository contains the source code for my professional portfolio website, 
 ---
 
 ## 👨‍💻 About the Author
-I am an ** Arena FIDE Master** and a student programmer passionate about **Aerospace Engineering** and **Robotics**. I believe that the analytical discipline of chess is the perfect foundation for writing elegant code.
+I am an ** Arena International Master** and a student programmer passionate about **Aerospace Engineering** and **Robotics**. I believe that the analytical discipline of chess is the perfect foundation for writing elegant code.
 
 **Connect with me on [LinkedIn](https://www.linkedin.com/in/abhigyan-g-67179a3a9/)**
+
+
+Copyright Notice ──
+Code structure & logic: MIT License — free to learn from and adapt.
+Personal content (photos, certificates, awards) © 2026 Abhigyan.
+All personal content rights reserved. Do not reproduce without permission.
